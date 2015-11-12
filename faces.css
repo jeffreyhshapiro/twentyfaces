@@ -1,0 +1,28 @@
+body {
+  padding-top: 5px;
+}
+
+img {
+  padding: 10px;
+}
+
+h1, h4 {
+  font-family: lato;
+  text-align: center;
+  position: relative;
+  padding-right: 185px;
+}
+
+#start {
+  position: relative;
+}
+
+.container {
+  padding-top: 10px;
+
+}
+
+.centered {
+  position: relative;
+  margin-left: 490px;
+}
