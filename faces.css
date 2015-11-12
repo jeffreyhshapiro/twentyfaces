@@ -6,15 +6,11 @@ img {
   padding: 10px;
 }
 
-h1, h4 {
+h1, h6 {
   font-family: lato;
   text-align: center;
   position: relative;
   padding-right: 185px;
-}
-
-#start {
-  position: relative;
 }
 
 .container {
@@ -23,6 +19,5 @@ h1, h4 {
 }
 
 .centered {
-  position: relative;
   margin-left: 490px;
 }
