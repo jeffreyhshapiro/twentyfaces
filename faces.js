@@ -22,16 +22,16 @@ function countdown() {
 var images = document.getElementsByTagName("img");
 for (i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function() {
-   if (this.getAttribute("data-state") === "on") {
+    if (this.getAttribute("data-state") === "on") {
     counter += 1;
     this.setAttribute("data-state", "off");
    } else {
     console.log("no count");
    }
    
- });
+  });
 
- }
+}
 
 
 

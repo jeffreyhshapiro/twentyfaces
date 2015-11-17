@@ -13,13 +13,8 @@ img:active {
  opacity: .8;
 }
 
-.centerer {
-  text-align: center;
-}
-
-body {
-  margin-left: 25px;
-  margin-right: 25px;
+.text-center {
+  padding-right: 5%;
 }
 
 h1, h3 {
