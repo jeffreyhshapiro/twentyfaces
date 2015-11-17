@@ -3,98 +3,95 @@
 <head>
   <title>SNL Faces</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" type="text/css" href="faces.css">
-  <script type="text/javascript" src="faces.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
 
 </head
 
 <body>
-  
-  <button class="btn btn-danger" onclick="countdown()">Start the game!</button> 
-  <h1>SNL Face Game</h1>
-   
-  <h6>Click as many heads as you can in 20 seconds! (Each head should only be clicked once. Refresh the page to play again.)</h6>
-  
+  <div class="centerer"><h3>SNL Face Game</h3><button class="btn btn-danger" id="starter">Start the game!</button></div>
+  <div class="centerer"><h6>Click as many characters as you can in 20 seconds! (Each should only be clicked once. Refresh the page to play again.)</h6></div>
+
 
   <div class="container">
     <div class="row">
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="brian2.png" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="brian2.png" data-state="on" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="stephan.png" height="125px" onclick="countup(); this.onclick=null"></div>         
+       <img src="stephan.png" data-state="on" height="125px"></div>         
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="copies.png" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="copies.png" data-state="on" height="125px"></div>
         
   
        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="leslie.png" id="leslie"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="leslie.png" data-state="on" id="leslie" height="125px"></div>
         
        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-        <img src="pat.png" id="pat" height="125px" onclick="countup(); this.onclick=null"></div>
+        <img src="pat.png" data-state="on" id="pat" height="125px"></div>
 
   </div><!--close row-->
 
       <div class="row">
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="target.png" id="target" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="target.png" data-state="on" id="target" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="churchlady.png" id="churchlady" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="churchlady.png" data-state="on" id="churchlady" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="dooneese.png" id="dooneese" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="dooneese.png" data-state="on" id="dooneese" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="molly.png" id="molly"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="molly.png" data-state="on" id="molly"height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="zamata.png" id="zamata"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="zamata.png" data-state="on" id="zamata"height="125px"></div>
 
   </div><!--close row-->
 
       <div class="row">
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="wayne.png" id="wayne" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="wayne.png" data-state="on" id="wayne" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="radner.png" id="radner"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="radner.png" data-state="on" id="radner"height="125px"></div>
 
        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-        <img src="eddie.png" id="eddie"height="125px" onclick="countup(); this.onclick=null"></div>
+        <img src="eddie.png" data-state="on" id="eddie"height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="phil.png" id="phil" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="phil.png" data-state="on" id="phil" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="cheri2.png" id="cheri" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="cheri2.png" data-state="on" id="cheri" height="125px"></div>
   </div>
 
      <div class="row">
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="chris.png" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="chris.png" data-state="on" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="dieter.png" id="dieter"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="dieter.png" data-state="on" id="dieter"height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="lovitz.png" id="lovitz"height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="lovitz.png" data-state="on" id="lovitz"height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="mrbill.png" id="mrbill" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="mrbill.png" data-state="on" id="mrbill" height="125px"></div>
 
       <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-       <img src="tim.png" id="tim" height="125px" onclick="countup(); this.onclick=null"></div>
+       <img src="tim.png" data-state="on" id="tim" height="125px"></div>
 
       </div> 
 
 
   </div><!--close container -->
 
+ <script type="text/javascript" src="faces.js"></script>
 </body>
 
 
