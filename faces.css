@@ -2,15 +2,14 @@
 img {
   padding: 10px;
   opacity: .8;
-
 }
 
-img:hover{
+img:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-img:active{
+img:active {
  opacity: .8;
 }
 
@@ -20,13 +19,10 @@ img:active{
 
 body {
   margin-left: 25px;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 h1, h3 {
   font-family: lato;
 }
 
-.container {
-  margin-left: 40px;
-}
