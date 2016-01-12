@@ -21,3 +21,7 @@ h1, h3 {
   font-family: lato;
 }
 
+div img {
+  height: 125px;
+}
+
